@@ -596,7 +596,6 @@ header {
     flex-wrap: wrap;
     text-align: left;
     padding-top: 100px;
-    padding-right: auto;
     padding-bottom: 100px;
   }
 
@@ -606,14 +605,17 @@ header {
 
   .footer-input {
     padding-left: 108px;
+    width: 453px;
   }
   .social-tittle {
     text-align: left;
   }
 }
-@media only screen and (min-width: 768px) {
-  .footer-text {
-    text-align: left;
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-input {
+    padding-left: 108px;
+    width: 553px;
   }
 }
 
@@ -623,15 +625,31 @@ header {
   }
 }
 
-.footer-info {
-  margin: 0 auto 72px auto;
+/* .footer-info {
   width: 268px;
-  text-align: center;
+  text-align: left;
+} */
+
+@media only screen and (min-width: 480px) {
+  .footer-info {
+    margin: 0 auto 72px auto;
+    width: 268px;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-info {
+    text-align: left;
+    margin-left: 104px;
+    margin-right: 24px;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
   .footer-info {
     text-align: left;
+    margin-left: 0;
     margin-right: 120px;
   }
 }
@@ -653,7 +671,7 @@ header {
   text-align: center;
   margin-bottom: 16px;
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 768px) {
   .social-tittle {
     text-align: left;
   }
@@ -672,6 +690,14 @@ header {
 }
 .footer-text {
   text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-text {
+    text-align: left;
+    width: 264px;
+    margin-top: 16px;
+  }
 }
 @media only screen and (min-width: 1200px) {
   .footer-text {
