@@ -67,7 +67,12 @@ li {
 .menu-nav {
   display: flex;
 }
-
+@media only screen and (max-width: 767px) {
+  .header-menu {
+    align-items: center;
+    justify-content: space-between;
+  }
+}
 @media only screen and (min-width: 768px) {
   .adress-list {
     display: block;
@@ -215,7 +220,7 @@ header {
 
 .hero {
   background: var(--color-for-title);
-  padding: 188px 0px;
+  padding: 112px 0px;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -292,18 +297,31 @@ header {
   }
 }
 
+@media only screen and (min-width: 1200px) {
+  .hero {
+    padding: 188px 0;
+  }
+}
+
 .hero-title {
-  font-size: 56px;
+  font-size: 36px;
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--color-white);
-  margin-bottom: 48px;
+  margin-bottom: 72px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 768px) {
   .hero-title {
-    font-size: 36px;
+    font-size: 56px;
+    margin-bottom: 36px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .hero-title {
+    margin-bottom: 48px;
   }
 }
 
@@ -1312,9 +1330,11 @@ header {
 }
 
 .menu-toggle {
-  position: absolute;
+  /* position: absolute;
   top: 24px;
-  right: 24px;
+  right: 24px; */
+  align-items: center;
+  justify-content: space-between;
 }
 @media only screen and (min-width: 768px) {
   .menu-toggle {
@@ -1362,7 +1382,7 @@ a {
 .adress-mobile-list {
   width: 100%;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 24px;
   line-height: 1.11;
   color: var(--сolor-accent);
   margin-bottom: 40px;
