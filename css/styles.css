@@ -1314,6 +1314,7 @@ header {
 
 .menu-container .menu-toggle {
   position: absolute;
+  justify-content: center;
   top: 16px;
   right: 16px;
   color: #fff;
