@@ -18,9 +18,9 @@ body {
   font-size: 16px;
   line-height: 1.5;
 }
-* {
+/* * {
   outline: 1px solid red;
-}
+} */
 
 h1,
 h2,
@@ -542,6 +542,22 @@ header {
 }
 .social-icons {
   transition: fill var(--animation);
+}
+
+@media only screen and (min-width: 768px) {
+  .customers-item {
+    text-align: center;
+    flex-basis: calc((100% - 2 * 24px) / 3);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .customers-list {
+    flex-wrap: nowrap;
+  }
+  .customers-item {
+    width: 168px;
+  }
 }
 
 .customers-item:hover,
