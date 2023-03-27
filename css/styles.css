@@ -1325,7 +1325,7 @@ header {
   padding: 0;
   margin-bottom: auto;
 }
-
+/* просто комент */
 .mobile-menu-svg {
   stroke: var(--color-for-title);
 }
