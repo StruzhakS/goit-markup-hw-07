@@ -229,6 +229,61 @@ header {
   margin-right: auto;
 }
 
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../image/retina-2x/people-mob-2x.jpg);
+  }
+}
+
+@media only screen and (min-width: 481px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../image/people-tablet-1x.jpg");
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../image/retina-2x/people-tablet-2x.jpg");
+    }
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../image/people.png");
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .price {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../image/retina-2x/people-2x.jpg");
+    }
+  }
+}
+
 .hero-title {
   font-size: 56px;
   line-height: 1.07;
@@ -236,6 +291,12 @@ header {
   letter-spacing: 0.02em;
   color: var(--color-white);
   margin-bottom: 48px;
+}
+
+@media only screen and (max-width: 767px) {
+  .hero-title {
+    font-size: 36px;
+  }
 }
 
 .hero-button {
@@ -286,12 +347,14 @@ header {
   }
 }
 .features-list {
-  width: 396px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 72px;
 }
 
 @media only screen and (min-width: 768px) {
   .features-list {
-    display: flex;
+    flex-direction: row;
     width: 100%;
     flex-wrap: wrap;
     text-align: left;
@@ -309,7 +372,6 @@ header {
   }
 }
 .feature-items {
-  margin-bottom: 72px;
   max-width: 396px;
   margin-left: auto;
   margin-right: auto;
@@ -327,13 +389,14 @@ header {
 }
 
 .feature-text {
+  text-align: left;
   font-weight: 500;
 }
 
 @media only screen and (min-width: 1200px) {
   .feature-text {
-    text-align: start;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.01em;
+    height: 72px;
   }
 }
 
@@ -388,11 +451,12 @@ header {
   height: 64px;
 }
 
-@media only screen and (min-width: 768px) {
-  .team-list {
-    display: flex;
-    flex-wrap: wrap;
-  }
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 64px;
+  column-gap: 24px;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -469,7 +533,6 @@ header {
 }
 .card {
   max-width: 264px;
-  margin: 0 auto 72px auto;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -517,7 +580,15 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   row-gap: 72px;
-  column-gap: 16px;
+  column-gap: 24px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .customers-list {
+    width: 552px;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -638,6 +709,12 @@ header {
   }
 }
 
+@media only screen and (max-width: 767px) {
+  .footer-info {
+    margin-bottom: 72px;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .footer-info {
     text-align: left;
@@ -679,6 +756,7 @@ header {
 
 .logo-footer {
   display: block;
+  text-align: left;
   color: #f4f4fd;
   text-transform: uppercase;
   font-family: "Raleway";
@@ -688,8 +766,14 @@ header {
   text-decoration: none;
   margin-bottom: 16px;
 }
+
+@media only screen and (max-width: 767px) {
+  .logo-footer {
+    text-align: center;
+  }
+}
 .footer-text {
-  text-align: center;
+  text-align: left;
 }
 
 @media only screen and (min-width: 768px) {
@@ -887,6 +971,14 @@ header {
   border-radius: 4px;
   z-index: 100;
 }
+
+@media only screen and (max-width: 768px) {
+  .modal {
+    max-width: 100%;
+    width: 392px;
+  }
+}
+
 .modal-btn {
   display: flex;
   align-items: center;
