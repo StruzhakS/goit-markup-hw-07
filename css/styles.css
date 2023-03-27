@@ -311,12 +311,12 @@ header {
   letter-spacing: 0.02em;
   color: var(--color-white);
   margin-bottom: 72px;
-  width: 320px;
+  max-width: 320px;
 }
 
 @media only screen and (min-width: 768px) {
   .hero-title {
-    width: 496px;
+    max-width: 496px;
     font-size: 56px;
     margin-bottom: 36px;
   }
