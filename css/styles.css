@@ -1411,3 +1411,44 @@ a {
   font-size: 20px;
   line-height: 1.2;
 }
+
+/* ================Contacts===================== */
+
+.contacts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts-title {
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 100px;
+}
+
+.contacts-list {
+  display: flex;
+  justify-content: flex-start;
+  gap: 24px;
+}
+
+.contact-link {
+  color: inherit;
+}
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--сolor-accent);
+}
+
+.contact-item {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.contacts-list-item {
+  font-size: 20px;
+  margin-bottom: 32px;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--color-ocean);
+}
